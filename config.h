@@ -185,8 +185,8 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
 	{ MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("xrandr.sh") },
-	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
+	{ MODKEY,			XK_c,		spawn,		SHCMD("clipmenu") },
+	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD(TERMINAL "clipmenu") }, */
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
 	{ MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("bluetooth") },
@@ -197,8 +197,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pulsemixer; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
-	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
-	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
+	{ MODKEY,			XK_period,	spawn,		SHCMD("rofimoji") },
+	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("nerdfont_menu") },
 
 	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
 	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
@@ -228,8 +228,8 @@ static Key keys[] = {
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
 	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
-	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
+	{ MODKEY,			XK_Print,	spawn,		SHCMD("screenshot_menu") },
+	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("screenshot_menu -s") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Scroll_Lock,	spawn,		SHCMD("killall screenkey || screenkey &") },
 
