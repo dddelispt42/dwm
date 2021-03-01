@@ -15,8 +15,8 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
-static char dmenufont[]             = "monospace:size=10";
+static const char *fonts[]          = { "Hack Nerd Font Mono:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
+static char dmenufont[]             = "Hack Nerd Font Mono:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -51,7 +51,13 @@ static const Rule rules[] = {
 	*/
 	/* class    instance      title       	 tags mask    isfloating   isterminal  noswallow  monitor */
 	{ "Gimp",     NULL,       NULL,       	    1 << 8,       0,           0,         0,        -1 },
-	{ TERMCLASS,   NULL,       NULL,       	    0,            0,           1,         0,        -1 },
+	{ "firefox",  NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
+	{ "brave",    NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
+	{ "thunderbird", NULL,    NULL,       	    1 << 3,       0,           0,         0,        -1 },
+	{ NULL,       NULL,       "st - heiko@ed",  0,            0,           1,         0,        -1 },
+	{ NULL,       NULL,       "st - heiko@localhost", 1 << 1, 0,           1,         0,        -1 },
+	{ NULL,       NULL,       "st - heiko@lab", 1 << 2,       0,           1,         0,        -1 },
+	{ TERMCLASS,  NULL,       NULL,       	    0,            0,           1,         0,        -1 },
 	{ NULL,       NULL,       "Event Tester",   0,            0,           0,         1,        -1 },
 	{ NULL,      "spterm",    NULL,       	    SPTAG(0),     1,           1,         0,        -1 },
 	{ NULL,      "spcalc",    NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
