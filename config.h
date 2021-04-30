@@ -54,6 +54,7 @@ static const Rule rules[] = {
 	{ "firefox",  NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
 	{ "brave",    NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
 	{ "thunderbird", NULL,    NULL,       	    1 << 3,       0,           0,         0,        -1 },
+	{ "signal",   NULL,       NULL,       	    1 << 4,       0,           0,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@ed",  0,            0,           1,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@localhost", 1 << 1, 0,           1,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@lab", 1 << 2,       0,           1,         0,        -1 },
