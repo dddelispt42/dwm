@@ -54,7 +54,7 @@ static const Rule rules[] = {
 	{ "firefox",  NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
 	{ "brave",    NULL,       NULL,       	    1 << 3,       0,           0,         0,        -1 },
 	{ "thunderbird", NULL,    NULL,       	    1 << 3,       0,           0,         0,        -1 },
-	{ "signal",   NULL,       NULL,       	    1 << 4,       0,           0,         0,        -1 },
+	{ "Signal",   NULL,       NULL,       	    1 << 4,       0,           0,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@ed",  0,            0,           1,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@localhost", 1 << 1, 0,           1,         0,        -1 },
 	{ NULL,       NULL,       "st - heiko@lab", 1 << 2,       0,           1,         0,        -1 },
@@ -196,7 +196,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD(TERMINAL "clipmenu") }, */
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
-	{ MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("bluetooth") },
+	{ MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("bluetooth_menu") },
 	{ MODKEY,			XK_n,		spawn,		SHCMD(TERMINAL " -e nvim -c VimwikiIndex") },
 	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD(TERMINAL " -e newsboat; pkill -RTMIN+6 dwmblocks") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD(TERMINAL " -e ncmpcpp") },
