@@ -194,6 +194,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("xrandr.sh") },
 	{ MODKEY,			XK_c,		spawn,		SHCMD("clipmenu") },
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD(TERMINAL "clipmenu") }, */
+	{ MODKEY,			XK_v,		spawn,		SHCMD(TERMINAL "ytfzf -t $(read -p 'Youtube query: ' q; echo $q)") },
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
 	{ MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("bluetooth_menu") },
